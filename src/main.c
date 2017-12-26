@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 
 		if (!strcmp(argv[2], "-r"))
 		{
-			printf("\nrestoring original title...");
+			printf("\nrestoring original title...\n");
 			write_data((char*)orig_title, file_ptr);
 			fclose(file_ptr);
 			return 0;
@@ -68,7 +68,7 @@ int main(int argc, char **argv)
 				title[i] = argv[3][i];
 			}
 
-			printf("\ncopying custom title into ROM...");
+			printf("\ncopying custom title into ROM...\n");
 			write_data(title, file_ptr);
 			fclose(file_ptr);
 			return 0;
@@ -76,7 +76,7 @@ int main(int argc, char **argv)
 
 		else if (!strcmp(argv[2], "-d"))
 		{
-			printf("\nInformation about \"%s\": \nROM 512 Byte Header: %s\nROM Size: %d Mbits\nROM Internal Checksum: $%x\nROM Internal Inverse Checksum: $%x\nROM Region: %s", argv[1], is_headered, get_rom_size(file_ptr), get_rom_checksum(file_ptr, 0), get_rom_checksum(file_ptr, 1), get_rom_country(file_ptr));
+			printf("\nInformation about \"%s\": \nROM 512 Byte Header: %s\nROM Size: %d Mbits\nROM Internal Checksum: $%x\nROM Internal Inverse Checksum: $%x\nROM Region: %s\n", argv[1], is_headered, get_rom_size(file_ptr), get_rom_checksum(file_ptr, 0), get_rom_checksum(file_ptr, 1), get_rom_country(file_ptr));
 			fclose(file_ptr);
 			return 0;
 		}
@@ -103,7 +103,7 @@ int main(int argc, char **argv)
 
 		if (!strcmp(input, "exit"))
 		{
-			printf("\ngoodbye.");
+			printf("\ngoodbye.\n");
 			return 0;
 		}
 
@@ -142,7 +142,7 @@ int main(int argc, char **argv)
 	//part 4: apply new title
 	if (!strcmp(input, "exit"))
 	{
-		printf("\ngoodbye");
+		printf("\ngoodbye\n");
 		fclose(file_ptr);
 		return 0;
 	}
@@ -161,7 +161,7 @@ int main(int argc, char **argv)
 			return 0;
 		}
 
-		printf("\nrestoring original title...");
+		printf("\nrestoring original title...\n");
 		write_data((char*)orig_title, file_ptr);
 
 		fclose(file_ptr);
@@ -189,7 +189,7 @@ int main(int argc, char **argv)
 			return 0;
 		}
 
-		printf("\ncopying custom title into ROM...");
+		printf("\ncopying custom title into ROM...\n");
 		write_data(title, file_ptr);
 
 		fclose(file_ptr);
