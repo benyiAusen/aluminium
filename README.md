@@ -24,3 +24,10 @@ UNDER DIRECT EXECUTION:
 Special commands:
 "restore": Restores the target ROM's original game string. The original string is "SUPER MARIOWORLD\20h\20h\20h\20h\20h".
 "exit": Quits without doing anything.
+
+
+BUILD INSTRUCTIONS:
+You can use the binaries or compile the program from source (needed if there is no binary for your platform).
+For Windows, MinGW64 is needed to use GNU make natively. For Linux, the base-devel package is required.
+To build, type "make std" if you are using a UNIX system such as macOS or Linux. If you are on Windows, install MinGW64 and type
+"make win". You can also do "make clean" to remove unneeded files (or "make wclean" on Windows).
