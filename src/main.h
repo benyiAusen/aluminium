@@ -179,7 +179,7 @@ void write_data(char data[21], FILE *ptr)
 
 void print_usage()
 {
-	printf("\nUsage: aluminium rom.sfc -option\nValid options:\n-r: Restore the target ROM's original \"SUPER MARIOWORLD\" title. Needed for Lunar Magic!\n-t <TITLE>: Write a custom title string into the target ROM.\n-d: Show some key information about the target ROM");
+	printf("\nUsage: aluminium rom.sfc -option\nValid options:\n-r: Restore the target ROM's original \"SUPER MARIOWORLD\" title. Needed for Lunar Magic!\n-t <TITLE>: Write a custom title string into the target ROM.\n-d: Show some key information about the target ROM\n");
 }
 
 #endif
