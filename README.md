@@ -10,7 +10,7 @@ I wrote this little thing in C to see how could I use file manipulation in tools
 aluminium has two modes of operation. Via arguments and direct execution.
 
 VIA ARGUMENTS:
-Usage: aluminium rom.sfc -<option>
+aluminium rom.sfc -<option>
   -t <TITLE>: This option writes a custom 20-character title into the target ROM. Any characters after the 20th are ignored, and this is by design.
   -d: Displays part of the target ROM's information
   -r: Restores the target ROM's original game string. The original string is "SUPER MARIOWORLD\20h\20h\20h\20h\20h".
